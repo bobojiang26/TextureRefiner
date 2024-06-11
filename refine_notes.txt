@@ -1,0 +1,30 @@
+fox_new
+input: fox_original
+model: stabilityai/stable-diffusion-x4-upscaler
+prompt: High quality, rich details, sharp, clear facial features, with more distinct boundaries in areas of color transitions, a cartoon fox doll
+
+fox_new_1 
+input: fox_original
+model: stabilityai/stable-diffusion-xl-refiner-1.0
+prompt: a photo of a fox doll, real world, high quality, clear facial features, detailed
+
+
+fox_new_2
+input: fox_original
+model: stabilityai/stable-diffusion-xl-refiner-1.0
+prompt: 8k, real world, high quality, clear facial features, detailed, a photo of a fox doll
+
+fox_new_3
+input: fox_new_1
+model: stabilityai/stable-diffusion-x4-upscaler
+prompt: High quality, rich details, sharp, clear facial features, with more distinct boundaries in areas of color transitions, a cartoon fox doll
+
+
+to do
+1. direction should be included in the prompt
+2. super resolution may be operated directly on the texture
+3. how to align images from different views
+
+
+
+stable diffusion refinement model can not work efficiently on texture map, however the super resolution stable diffusion model can.

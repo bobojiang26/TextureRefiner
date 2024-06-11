@@ -1,0 +1,33 @@
+tqdm
+rich
+omegaconf
+ninja
+
+numpy
+scipy
+scikit-learn
+kornia
+matplotlib
+opencv-python
+imageio
+imageio-ffmpeg
+
+torch
+einops
+
+# for stable-diffusion
+huggingface_hub
+diffusers >= 0.23.1
+accelerate
+transformers
+
+# for dmtet and mesh export
+xatlas
+plyfile
+pygltflib
+trimesh
+
+
+# for gui
+dearpygui
+kiui
